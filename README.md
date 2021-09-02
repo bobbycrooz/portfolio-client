@@ -27,3 +27,22 @@ yarn create next-app --example with-tailwindcss with-tailwindcss-app
 ```
 
 Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+
+my style guide
+grad =  {
+    grad1 = #F44369
+    grad2 = #3E3B92
+    grad3? =
+}
+glow  = {
+    full-light = linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+}
+primary = #040404
+secondary = #DEDEDE
+textLow = #181818
+
+
+app features
+theme management with 
+tailwindcss
+
