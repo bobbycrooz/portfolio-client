@@ -1,7 +1,7 @@
 import '../styles/global.scss';
 import 'tailwindcss/tailwind.css';
-import Header from '../Components/Header';
-import Title from '../Components/Title';
+import Header from '../components/Header';
+import Title from '../components/Title';
 
 
 function MyApp({ Component, pageProps }) {
