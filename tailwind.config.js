@@ -3,10 +3,16 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: "class", // or 'media' or 'class'
   theme: {
+    fontFamily: {
+      'joe': ['Josefin Sans', 'sans-serif'],
+      'logo': ['Pacifico', 'cursive'],
+    },
     extend: {
+
       colors:{
+        body:"#090909",
         primary: "#040404",
-        secondary: "#DEDEDE",
+        secondary: "#C3C3C3",
         textLow: "#373737",
         glow: {
           full: "hsla(186, 100%, 69%, 1)",

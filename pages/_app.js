@@ -1,15 +1,20 @@
-import '../styles/global.scss'
+import '../styles/global.scss';
 import 'tailwindcss/tailwind.css';
+import Header from '../Components/Header';
+import Title from '../Components/Title';
 
 
 function MyApp({ Component, pageProps }) {
   return (
-    <main className="bg-gradient-to-r from-grad-one to-grad-two p-1 text-secondary w-full  min-h-screen " id="main">
-    <div className="inner w-full h-full">
+    <main className="text-secondary w-full bg-body  min-h-screen" id="main">
+      <Header />
+      <Title/>
+      <div className="app  p-4  ">
       <Component {...pageProps} />
-    </div>
+      </div>
     </main>
   );
 }
+
 
 export default MyApp;
