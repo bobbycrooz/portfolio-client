@@ -6,7 +6,7 @@ import styled from 'styled-components';
 export default function Title() {
   return (
     <Pane className="pane bg-gradient-to-r mt-2 from-grad-one to-grad-two h-20 w-full p-0">
-      <div className="w-full h-full bg-primary  flex  items-center text-textLow font-bold text-3xl font-joe  p-4">
+      <div className="w-full h-full bg-primary  flex  items-center text-textLow font-bold text-5xl font-joe  p-4">
           Welcome</div>
     </Pane>
   );

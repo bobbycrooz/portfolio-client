@@ -21,7 +21,7 @@ export default function Header() {
                 <a>Skills</a>
               </Link>
 
-              <Link href="/">
+              <Link href="/Projects">
                 <a>Project</a>
               </Link>
 
@@ -40,7 +40,9 @@ export default function Header() {
   );
 }
 
-const Logo = styled.h1``;
+const Logo = styled.h1`
+
+`;
 
 const Menu = styled.h1`
   width: 80%;

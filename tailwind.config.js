@@ -4,11 +4,16 @@ module.exports = {
   darkMode: "class", // or 'media' or 'class'
   theme: {
     fontFamily: {
+    
       'joe': ['Josefin Sans', 'sans-serif'],
-      'logo': ['Pacifico', 'cursive'],
+      'logo': ['Pacifico', 'cursive']
     },
     extend: {
-
+    
+      spacing:{
+      "btn-w":"140.5px",
+      "btn-h": "44px"
+      },
       colors:{
         body:"#090909",
         primary: "#040404",
@@ -21,7 +26,7 @@ module.exports = {
         grad: {
           one: "#F44369",
           two: "#3E3B92",
-
+          three:""
         }
       }
     },

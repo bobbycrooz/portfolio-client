@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
     <main className="text-secondary w-full bg-body  min-h-screen" id="main">
       <Header />
       <Title/>
-      <div className="app  p-4  ">
+      <div className="app  p-4 overflow-y-auto">
       <Component {...pageProps} />
       </div>
     </main>

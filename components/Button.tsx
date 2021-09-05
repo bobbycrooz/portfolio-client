@@ -2,23 +2,35 @@ import styled from 'styled-components';
 
 export default function Button({ children }) {
   return (
-    <Btn className="outer  relative w-20 h-16 bg-gradient-to-r mt-2 from-grad-one to-grad-two  rounded-3xl">
-      <button className="bg-primary  rounded-3xl text-2xl">{children}</button>
-      <span className="one w-full border h-full rounded-3xl"></span>
-      <span className="two w-full h-full rounded-3xl "></span>
+    <Btn className="outer  relative  bg-gradient-to-r mt-2 from-grad-one to-grad-two ">
+      <button className="bg-primary text-md font-medium leading-4">{children}</button>
+      <span className="one w-full border h-full "></span>
+      <span className="two w-full h-full"></span>
     </Btn>
   );
 }
 
 const Btn = styled.div`
-    /* background: linear-gradient(#fcd34d, #ec4899, #6ee7b7); */
-
+  width:140.5px;
+  height:44px;
+  border-radius:4px;
+    
 &:hover{
     animation: loader 1s linear infinite;
+    
+     span:nth-child(1) {
+      filter: blur(2px);
+    }
 
+    span:nth-child(2) {
+      filter: blur(6px);
+    }
 }
+
     button,
     span {
+  border-radius:4px;
+    
       position: absolute;
       left: 50%;
       top: 50%;
@@ -27,9 +39,10 @@ const Btn = styled.div`
 
     button {
       z-index: 7;
-      /* width: 150px;
-      height: 70px; */
+      width: 97.3%;
+      height: 92.3%;
       color:#fff;
+      letter-spacing:1.4px;
     }
 
     span {
@@ -39,13 +52,7 @@ const Btn = styled.div`
       
     }
 
-    span:nth-child(1) {
-      filter: blur(7px);
-    }
-
-    span:nth-child(2) {
-      filter: blur(12px);
-    }
+   
   }
 
   @keyframes loader {
