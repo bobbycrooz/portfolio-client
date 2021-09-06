@@ -1,5 +1,6 @@
 import Hashtag from '../components/Hashtag';
 import Card from '../components/ProjectCard';
+import bob from '../bob.png';
 
 // let projectTypes {
 //     name: String,
@@ -9,36 +10,28 @@ import Card from '../components/ProjectCard';
 const Projects = [
   {
     name: 'bobby',
-    discription: 'somthing'
-  },
-
-  {
-    name: 'bobby',
-    discription: 'somthing'
+    discription: 'somthing',
+    img: bob
   },
   {
     name: 'bobby',
-    discription: 'somthing'
+    discription: 'somthing',
+    img: bob
   },
   {
     name: 'bobby',
-    discription: 'somthing'
+    discription: 'somthing',
+    img: bob
   },
   {
     name: 'bobby',
-    discription: 'somthing'
+    discription: 'somthing',
+    img: bob
   },
   {
     name: 'bobby',
-    discription: 'somthing'
-  },
-  {
-    name: 'bobby',
-    discription: 'somthing'
-  },
-  {
-    name: 'bobby',
-    discription: 'somthing'
+    discription: 'somthing',
+    img: bob
   }
 ];
 
@@ -55,7 +48,7 @@ export default function Project({ data }) {
       </div>
       <div className="grid gap-4 grid-cols-1 mt-3 w-full p">
         {Projects.map((item, index) => (
-          <Card key={index} />
+          <Card key={index} item={item} />
         ))}
       </div>
       hello

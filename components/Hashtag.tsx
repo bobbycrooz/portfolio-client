@@ -53,8 +53,8 @@ height:30px;
 
     .cont {
       z-index: 7;
-      width: 97.3%;
-      height: 92.3%;
+      width: 98%;
+      height: 95%;
       letter-spacing:1.4px;
       
       &:hover, &.active{

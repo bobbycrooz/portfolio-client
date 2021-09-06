@@ -19,7 +19,7 @@ export default function Home() {
         <p className="hi font-medium">hi 👋,</p>
         <h1 className="name text-6xl font-extrabold mt-1 ">
           {' '}
-          <small>I'm</small> <Glow text="Idris," />
+          <small>I'm</small> Idris,
         </h1>
         <p className="info text-2xl   w-full mt-5 font-joe">
           A FullStack JavaScript Web Developer (Frontend-Heavy), <br />
