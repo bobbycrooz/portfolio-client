@@ -1,13 +1,13 @@
 import styled from 'styled-components';
-
-
-
+import Button from './Button';
+import Glow from './Glow';
 
 export default function Title() {
   return (
-    <Pane className="pane bg-gradient-to-r mt-2 from-grad-one to-grad-two h-20 w-full p-0">
-      <div className="w-full h-full bg-primary  flex  items-center text-textLow font-bold text-5xl font-joe  p-4">
-          Welcome</div>
+    <Pane className="pane  bg-gradient-to-r from-grad-one to-grad-two h-20 w-full p-0">
+      <div className="w-full flex h-full bg-primary items-center justify-between  p-4">
+        <Glow text="Welcome" />
+      </div>
     </Pane>
   );
 }

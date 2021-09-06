@@ -1,9 +1,13 @@
 import styled from 'styled-components';
 
-export default function Button({ children }) {
+export default function Button({ children, w, h, mt}) {
   return (
-    <Btn className="outer  relative  bg-gradient-to-r mt-2 from-grad-one to-grad-two ">
-      <button className="bg-primary text-md font-medium leading-4">{children}</button>
+    <Btn className="outer  relative  bg-gradient-to-r mt-2 from-grad-one to-grad-two " w={w} h={h} mt={mt}>
+      <button className="bg-primary text-md font-medium leading-4">
+      
+      {children}
+      
+      </button>
       <span className="one w-full border h-full "></span>
       <span className="two w-full h-full"></span>
     </Btn>
@@ -11,8 +15,10 @@ export default function Button({ children }) {
 }
 
 const Btn = styled.div`
-  width:140.5px;
-  height:44px;
+width: ${(props => props.w)};
+margin-top: ${({mt}) => mt ? mt : '0px'};
+height: ${({h}) => h ? h : '44px'};
+
   border-radius:4px;
     
 &:hover{

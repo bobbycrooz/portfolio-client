@@ -3,8 +3,9 @@ import Link from 'next/link';
 import { FaGithub } from 'react-icons/fa';
 import { SiLinkedin } from 'react-icons/si';
 import { AiFillTwitterCircle } from 'react-icons/ai';
-import { HiDocumentDownload } from 'react-icons/hi'
-import ButtonOne  from '../components/Button';
+import { HiDocumentDownload } from 'react-icons/hi';
+import Button from '../components/Button';
+import Glow from '../components/Glow';
 
 export default function Home() {
   return (
@@ -18,31 +19,35 @@ export default function Home() {
         <p className="hi font-medium">hi 👋,</p>
         <h1 className="name text-6xl font-extrabold mt-1 ">
           {' '}
-          <small>I'm</small> Idris,
+          <small>I'm</small> <Glow text="Idris," />
         </h1>
         <p className="info text-2xl   w-full mt-5 font-joe">
-          A FullStack JavaScript Web Developer (Frontend-Heavy),{" "}
-          <br />
+          A FullStack JavaScript Web Developer (Frontend-Heavy), <br />
           I implement great responsive
           <br />
           and interactive Web Apps,
-           more about me here
         </p>
-        <p className="stack text-lg mt-3 text-textLow">ReactJs | NextJs | NodeJs</p>
+        <p className="more"> more about me here</p>
+        <p className="stack text-lg mt-3 text-textLow">
+          ReactJs | NextJs | NodeJs
+        </p>
 
-     
         <div className="cto_cont  mt-4">
-        <div className="cto  p-2 flex items-center">
-          <Link href="/about">
-            <ButtonOne className="button_one">Explore</ButtonOne>
-          </Link>
-
-          <div className="resume   w-8 h-btn-h flex items-center justify-center  ml-5">
+          <div className="cto  p-2 flex items-center">
             <Link href="/about">
-              <a className=""><HiDocumentDownload fontSize="30"/></a>
+              <Button className="button_one" w="140.5px" h="44px">
+                Explore
+              </Button>
             </Link>
+
+            <div className="resume   w-8 h-btn-h flex items-center justify-center  ml-5">
+              <Link href="/about">
+                <a className="">
+                  <HiDocumentDownload fontSize="30" />
+                </a>
+              </Link>
+            </div>
           </div>
-        </div>
         </div>
       </main>
       <div className="social_icon flex mb-4 space-x-4 p-2 items-center justify-center ">

@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <div className="navbar bg-primary h-20 flex justify-between items-center shadow-md w-full  p-2">
       <Logo className="logo text-textLow font-black font-logo text-3xl">
-        bdev
+        Idris
       </Logo>
 
       <Menu>
@@ -17,7 +17,7 @@ export default function Header() {
                 <a>About</a>
               </Link>
 
-              <Link href="/about">
+              <Link href="/About">
                 <a>Skills</a>
               </Link>
 
@@ -31,7 +31,12 @@ export default function Header() {
             </div>
 
             <div className="menu_icon">
-              <Hamburger color="#C3C3C3" toggled={true} direction="right" size={20} />
+              <Hamburger
+                color="#C3C3C3"
+                toggled={false}
+                direction="right"
+                size={20}
+              />
             </div>
           </div>
         </RotateBG>
@@ -40,19 +45,17 @@ export default function Header() {
   );
 }
 
-const Logo = styled.h1`
-
-`;
+const Logo = styled.h1``;
 
 const Menu = styled.h1`
-  width: 80%;
   /* width: 48px; */
+  width: 80%;
 
   .menu_bg {
     padding: 1px;
 
     .nav-links {
-                /* display: none; */
+      /* display: none; */
 
       a {
       }
