@@ -13,8 +13,8 @@ export default function Card({ item }) {
           <button className="star absolute w-auto px-1 flex justify-center items-center bg-primary right-0 ">
             👍 23
           </button>
-          <img src={item.img.src} alt="" className="w-full h-full" />
-          {console.log(item)}
+          {/* <img src={item.img.src} alt="" className="w-full h-full" />
+          {console.log(item)} */}
         </div>
 
         <div className="info bg-body  w-full text-lg p-2">
