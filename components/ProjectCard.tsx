@@ -4,6 +4,7 @@ import { AiFillGithub } from 'react-icons/ai';
 import { FaGlobe } from 'react-icons/fa';
 import { FcLike } from 'react-icons/fc';
 import { AiFillLike } from 'react-icons/ai';
+import Image from 'next/image';
 
 export default function Card({ item }) {
   return (
@@ -14,9 +15,16 @@ export default function Card({ item }) {
         {/* <div className="cover">
         </div> */}
 
-        <img src={item.img.src} alt="" className="w-full h-full rounded-md" />
+        {console.log()}
+
+        <Image
+          src={item.img}
+          alt=""
+          layout="fill"
+          className="w-full h-full rounded-md"
+        />
         <div className="info bg-body  w-full text-lg p-2 rounded-b-md">
-          <div className="name_container flex justify-between">
+          <div className="name_container flex justify-between rounded-md">
             <h2 className="project_name text-2xl mt-3  font-bold">Ajoo CMS</h2>
             <button className="star  w-auto px-1 flex justify-center items-center    ">
               <AiFillLike className="text-grad-two" />
@@ -70,6 +78,7 @@ const Main = styled.div`
         content: '';
         position: absolute;
         background: #090909;
+        border-radius: 7px;
         opacity: 0.5;
         width: 100%;
         height: 100%;

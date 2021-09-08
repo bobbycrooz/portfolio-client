@@ -25,7 +25,7 @@ export default function Header() {
                 <a>Project</a>
               </Link>
 
-              <Link href="/">
+              <Link href="/Skills">
                 <a>Contact</a>
               </Link>
             </div>
