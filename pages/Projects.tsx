@@ -38,7 +38,7 @@ const Projects = [
 export default function Project({ data }) {
   return (
     <div className="main p-2">
-      <div className="tag_container  grid gap-1 grid-cols-4 w-full h-auto py-1 text-lg text-textLow">
+      <div className="tag_container  grid gap-y-2 gap-x-1 grid-cols-4 w-full h-auto py-1 text-lg text-textLow">
         <Hashtag selected={true} name="ReactJs" />
         <Hashtag selected={false} name="NodeJs" />
         <Hashtag selected={false} name="NextJs" />
@@ -46,7 +46,7 @@ export default function Project({ data }) {
         <Hashtag selected={false} name="Js" />
         <Hashtag selected={false} name="Git" />
       </div>
-      <div className="grid gap-4 grid-cols-1 mt-3 w-full p">
+      <div className="grid gap-4 grid-cols-1 mt-6 w-full p">
         {Projects.map((item, index) => (
           <Card key={index} item={item} />
         ))}
