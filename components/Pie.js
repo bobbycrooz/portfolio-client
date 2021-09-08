@@ -31,7 +31,7 @@ const data = {
 
 export default function SkillPie() {
   return (
-    <main className="h-full border ">
+    <main className="h-full  ">
       <Barchart className="barchart   my-4 w-full">
         <Doughnut data={data} responsive={true} className=" w-full" />
       </Barchart>

@@ -60,7 +60,7 @@ export default function Skills() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="h-full border w-full  ">
+      <main className="h-full  w-full  ">
         <h1 className="about_skill text-xl">
           I adopt new technology very fast as long as it's got Documentations,
           <br />
