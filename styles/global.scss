@@ -14,10 +14,18 @@ code {
     monospace;
 }
 
-
-.app{
-height: calc(100vh - 10.7rem);
+.app {
+  height: calc(100vh - 10.7rem);
 }
+
+.job_text {
+  font-size: 8rem;
+}
+
+// input:placeholder {
+//   color: blue;
+//   font-size: 0.7rem;
+// }
 // main{
 //   // background: linear-gradient(90deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
 //   background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);

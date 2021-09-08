@@ -16,13 +16,13 @@ export default function Home() {
       </Head>
 
       <main className="welcome mt-4">
-        <p className="hi font-medium">hi 👋,</p>
-        <h1 className="name text-6xl font-extrabold mt-1 ">
-          {' '}
-          <small>I'm</small> Idris,
-        </h1>
-        <p className="info text-2xl   w-full mt-5 font-joe">
-          A FullStack JavaScript Web Developer (Frontend-Heavy), <br />
+        <p className="hi font-medium text-2xl">hi 👋,</p>
+        <div className="intro flex items-center  mt-2  space-x-4">
+          <h1 className="name text-5xl font-extrabold">I'm</h1>{' '}
+          <Glow text="Idris" size="58px" />,
+        </div>
+        <p className="info text-2xl text-textRead  w-full mt-5 font-joe">
+          A <u>FullStack</u> JavaScript Web Developer (Frontend-Heavy), <br />
           I implement great responsive
           <br />
           and interactive Web Apps,

@@ -9,7 +9,7 @@ export default function Title() {
   return (
     <Pane className="pane  bg-gradient-to-r from-grad-one to-grad-two h-20 w-full p-0 mt-2">
       <div className="inner w-full  flex h-full bg-primary items-center justify-between  p-4">
-        <Glow text={pathname.replace('/', '_')} />
+        <Glow size={false} text={pathname.replace('/', ' ')} />
         {console.log(pathname)}
         {['/Projects', '/Skills'].includes(pathname) ? (
           <Button mt={false} w="70px" h="30px">

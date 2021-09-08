@@ -3,18 +3,16 @@ import '../styles/global.scss';
 import 'tailwindcss/tailwind.css';
 import Header from '../components/Header';
 import Title from '../components/Title';
-
+import Footer from '../components/Footer';
 import { useRouter } from 'next/router';
 
 function MyApp({ Component, pageProps }) {
   const { pathname } = useRouter();
 
   useEffect(() => {
-    window.addEventListener('load', () => {
-      setTimeout(() => {
-        window.scrollTo(0, 1);
-      }, 0);
-    });
+    setTimeout(() => {
+      window.scrollTo(0, 1);
+    }, 0);
   }, [pathname]);
 
   return (
@@ -24,6 +22,7 @@ function MyApp({ Component, pageProps }) {
       <div className="app  p-4 overflow-y-auto">
         <Component {...pageProps} />
       </div>
+      <Footer />
     </main>
   );
 }

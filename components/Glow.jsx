@@ -1,14 +1,18 @@
 import styled from 'styled-components';
 
-export default function Glow({ text }) {
-  return <Text className="">{text}</Text>;
+export default function Glow({ text, size }) {
+  return (
+    <Text className="" s={size}>
+      {text}
+    </Text>
+  );
 }
 
 const Text = styled.h2`
   /* position: relative; */
   margin-top: -8px;
   font-weight: 600;
-  font-size: 36px;
+  font-size: ${({ s }) => (s ? s : '36px')};
   /* color: #f44369;
   #373737 */
   letter-spacing: 1px;
@@ -42,8 +46,11 @@ const Text = styled.h2`
     92.1%,
     100% {
       color: #ccb6ba;
-      text-shadow: 0 0 10px #f71949, 0 0 20px #f71949, 0 0 10px #f71949,
-        0 0 40px #f71949, 0 0 80px #f71949, 0 0 160px #f71949;
+      text-shadow: 0 0 10px #f71949, 0 0 20px #f71949;
     }
   }
 `;
+
+// , 0 0 10px #f71949,
+//         0 0 40px #f71949
+// 0 0 80px #f71949, 0 0 160px #f71949
