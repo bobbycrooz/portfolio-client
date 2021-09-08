@@ -31,13 +31,15 @@ const data = {
 
 export default function SkillPie() {
   return (
-    <Barchart className="barchart bg-primary  mt-3 w-full">
-      <Doughnut data={data} responsive={true} className=" w-full" />
-    </Barchart>
+    <main className="h-full border ">
+      <Barchart className="barchart   my-4 w-full">
+        <Doughnut data={data} responsive={true} className=" w-full" />
+      </Barchart>
+    </main>
   );
 }
 
 const Barchart = styled.div`
-  height: 270px;
+  /* height: 270px; */
   width: 100%;
 `;

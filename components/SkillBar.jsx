@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
-import { SiJavascript } from 'react-icons/si';
+// import { SiJavascript } from 'react-icons/si';
 const SkillBar = ({ skills }) => {
   return (
-    <main className="skills_page mt-3 w-full h-full">
+    <main className="skills_page  w-full h-full">
       {skills?.map((item, index) => (
         <Card
           key={index}
