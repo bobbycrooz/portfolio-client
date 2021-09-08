@@ -4,10 +4,8 @@ import { RotateBG } from './commons';
 import Link from 'next/link';
 export default function Header() {
   return (
-    <div className="navbar bg-primary h-20 flex justify-between items-center shadow-md w-full  p-2">
-      <Logo className="logo text-textLow font-black font-logo text-3xl">
-        Idris
-      </Logo>
+    <div className="navbar bg-primary z-10 sticky top-0 h-20 flex justify-between items-center shadow-md w-full  p-2">
+      <h1 className=" text-textLow font-black font-logo text-3xl">Idris</h1>
 
       <Menu>
         <RotateBG className="menu_bg rounded-lg">
@@ -44,8 +42,6 @@ export default function Header() {
     </div>
   );
 }
-
-const Logo = styled.h1``;
 
 const Menu = styled.h1`
   /* width: 48px; */

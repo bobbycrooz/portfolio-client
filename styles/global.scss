@@ -7,6 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #090909;
 }
 
 code {
@@ -14,8 +15,12 @@ code {
     monospace;
 }
 
-.app {
-  height: calc(100vh - 10.7rem);
+.welcome {
+  height: calc(60vh);
+}
+
+.pane_title {
+  top: 5rem;
 }
 
 .job_text {
@@ -35,9 +40,3 @@ code {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer components {
-  .btn {
-    @apply px-4 py-2 bg-blue-600 text-white rounded;
-  }
-}

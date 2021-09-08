@@ -7,7 +7,7 @@ export default function Title() {
   const { pathname } = useRouter();
 
   return (
-    <Pane className="pane  bg-gradient-to-r from-grad-one to-grad-two h-20 w-full p-0 mt-2">
+    <Pane className="pane_title z-10 sticky bg-gradient-to-r from-grad-one to-grad-two h-20 w-full p-0">
       <div className="inner w-full  flex h-full bg-primary items-center justify-between  p-4">
         <Glow size={false} text={pathname.replace('/', ' ')} />
         {console.log(pathname)}

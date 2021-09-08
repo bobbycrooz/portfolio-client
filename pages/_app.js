@@ -10,16 +10,15 @@ function MyApp({ Component, pageProps }) {
   const { pathname } = useRouter();
 
   useEffect(() => {
-    setTimeout(() => {
-      window.scrollTo(0, 1);
-    }, 0);
+    window.scrollTo(0, 1);
+    console.log('i scrolled');
   }, [pathname]);
 
   return (
-    <main className="text-secondary w-full bg-body  min-h-screen" id="main">
+    <main className="text-secondary w-full h-full " id="main">
       <Header />
       <Title />
-      <div className="app  p-4 overflow-y-auto">
+      <div className="app h-full  bg-body p-4 ">
         <Component {...pageProps} />
       </div>
       <Footer />
