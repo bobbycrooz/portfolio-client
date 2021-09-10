@@ -51,9 +51,9 @@ const Menu = styled.h1`
   width: 48px;
   transition: all 0.2s linear;
 
-  * {
+  /* * {
     border: 1px solid red;
-  }
+  } */
 
   &.active {
     width: 80%;
