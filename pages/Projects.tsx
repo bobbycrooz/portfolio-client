@@ -1,6 +1,8 @@
 import Hashtag from '../components/Hashtag';
 import Card from '../components/ProjectCard';
-import bob from '../bob.png';
+// import bob from '../bob.png';
+import ran from '../public/linkone.jpeg';
+import bob from '../public/whatone.jpeg';
 
 // let projectTypes {
 //     name: String,
@@ -11,7 +13,7 @@ const Projects = [
   {
     name: 'bobby',
     discription: 'somthing',
-    img: bob
+    img: ran
   },
   {
     name: 'bobby',
@@ -21,7 +23,7 @@ const Projects = [
   {
     name: 'bobby',
     discription: 'somthing',
-    img: bob
+    img: ran
   },
   {
     name: 'bobby',
@@ -31,7 +33,7 @@ const Projects = [
   {
     name: 'bobby',
     discription: 'somthing',
-    img: bob
+    img: ran
   }
 ];
 

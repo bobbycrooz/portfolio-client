@@ -99,30 +99,38 @@ export default function Contact() {
           </Button>
         </form>
 
-        <section className="social_media border w-full mt-6">
+        <section className="social_media  w-full mt-6">
           <header className="section_header text-4xl text-grad-one font-medium">
             <h1 className="find_me">Let's Socialize</h1>
           </header>
 
           <div className="social_media_card_container grid gap-2 grid-cols-2 mt-3">
-            <div className="social_media_card h-36 w-full border">
-              <Git className="github w-full h--top-full">
+            <div className="social_media_card h-36 w-full ">
+              <Git className="github w-full h-full ">
                 {/* <img src={git} alt="" /> */}
-                <Image src={git} />
-                git hub card here
+                {/* <Image src={git} /> */}
+                <h1 className="name  mt-2 ml-3">@bobbycrooz</h1>
               </Git>
             </div>
 
-            <div className="social_media_card h-36 w-full border">
-              <Link className="github w-full h-full ">git hub card here</Link>
+            <div className="social_media_card h-36 w-full ">
+              <Linked className="github w-full h-full ">
+                <h1 className="name  mt-2 ml-3">@idris</h1>
+              </Linked>
             </div>
 
-            <div className="social_media_card h-36 w-full border">
-              <Tweet className="github w-full h-full ">git hub card here</Tweet>
+            <div className="social_media_card h-36 w-full ">
+              <Tweet className="github w-full h-full ">
+                {' '}
+                <h1 className="name   mt-2 ml-3">@idrislove</h1>
+              </Tweet>
             </div>
 
-            <div className="social_media_card h-36 w-full border">
-              <What className="github w-full h-full ">git hub card here</What>
+            <div className="social_media_card h-36 w-full mt-2">
+              <What className="github w-full h-full ">
+                {' '}
+                {/* <h1 className="name  ml-3">@09077726</h1> */}
+              </What>
             </div>
           </div>
         </section>
@@ -156,19 +164,20 @@ const Status = styled.div`
 `;
 
 const Git = styled.div`
-  background-image: url(${git});
+  background-image: url('./gituse.png');
+  background-size: cover;
 `;
-const Link = styled.div`
-  background-image: url(${link});
+const Linked = styled.div`
+  background-image: url('./linkone.jpeg');
+  background-size: cover;
 `;
 
 const Tweet = styled.div`
-  background-image: url(${tweet});
+  background-image: url('./tweet.jpeg');
   background-size: cover;
-  width: 100%;
-  height: 100%;
 `;
 
 const What = styled.div`
-  background-image: url(${what});
+  background-image: url('./whatone.jpeg');
+  background-size: cover;
 `;

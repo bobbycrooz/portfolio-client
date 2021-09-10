@@ -27,6 +27,21 @@ code {
   font-size: 5rem;
 }
 
+.social_media_card div {
+  border-radius: 8px;
+  background-blend-mode: darken;
+  transition: all 0.2s linear;
+  position: relative;
+  h1 {
+    color: rgb(124, 124, 124);
+    font-style: italic;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
 // input:placeholder {
 //   color: blue;
 //   font-size: 0.7rem;
