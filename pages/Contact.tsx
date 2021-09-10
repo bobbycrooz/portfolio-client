@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
+import Image from 'next/image';
 import Chart from 'chart.js/auto';
 import { BsBarChartFill } from 'react-icons/bs';
 import { RiPieChartFill } from 'react-icons/ri';
@@ -10,6 +11,10 @@ import SkillChart from '../components/Chart';
 import SkillPie from '../components/Pie';
 import SkillBar from '../components/SkillBar';
 import Button from '../components/Button';
+import git from '../public/gituse.png';
+import link from '../public/linkone.jpeg';
+import tweet from '../public/tweet.jpeg';
+import what from '../public/whatone.jpeg';
 
 export default function Contact() {
   const [view, setView] = useState('normal');
@@ -49,7 +54,9 @@ export default function Contact() {
       </div>
 
       <main className="h-full  w-full contact_form  mt-3">
-        <h1 className="text-2xl">Send me a message:</h1>
+        <header className="section_header text-4xl text-grad-one font-medium">
+          <p className="w_i_">Drop a Message</p>
+        </header>
 
         <form
           action=""
@@ -91,6 +98,34 @@ export default function Contact() {
             Drop
           </Button>
         </form>
+
+        <section className="social_media border w-full mt-6">
+          <header className="section_header text-4xl text-grad-one font-medium">
+            <h1 className="find_me">Let's Socialize</h1>
+          </header>
+
+          <div className="social_media_card_container grid gap-2 grid-cols-2 mt-3">
+            <div className="social_media_card h-36 w-full border">
+              <Git className="github w-full h--top-full">
+                {/* <img src={git} alt="" /> */}
+                <Image src={git} />
+                git hub card here
+              </Git>
+            </div>
+
+            <div className="social_media_card h-36 w-full border">
+              <Link className="github w-full h-full ">git hub card here</Link>
+            </div>
+
+            <div className="social_media_card h-36 w-full border">
+              <Tweet className="github w-full h-full ">git hub card here</Tweet>
+            </div>
+
+            <div className="social_media_card h-36 w-full border">
+              <What className="github w-full h-full ">git hub card here</What>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );
@@ -118,4 +153,22 @@ const Status = styled.div`
 
     background: #6d6d6d;
   }
+`;
+
+const Git = styled.div`
+  background-image: url(${git});
+`;
+const Link = styled.div`
+  background-image: url(${link});
+`;
+
+const Tweet = styled.div`
+  background-image: url(${tweet});
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+`;
+
+const What = styled.div`
+  background-image: url(${what});
 `;

@@ -33,7 +33,12 @@ export default function SkillPie() {
   return (
     <main className="h-full  ">
       <Barchart className="barchart   my-4 w-full">
-        <Doughnut data={data} responsive={true} className=" w-full" />
+        <Doughnut
+          options={{ cutOutPercntage: 50 }}
+          data={data}
+          responsive={true}
+          className=" w-full"
+        />
       </Barchart>
     </main>
   );

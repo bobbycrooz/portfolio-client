@@ -9,6 +9,7 @@ import { FaThList } from 'react-icons/fa';
 import SkillChart from '../components/Chart';
 import SkillPie from '../components/Pie';
 import SkillBar from '../components/SkillBar';
+import Hashtag from '../components/Hashtag';
 
 const SkillArr = [
   {
@@ -54,7 +55,7 @@ export default function Skills() {
   }
 
   return (
-    <div className="skills  w-full h-screen   flex flex-cols text-lg">
+    <div className="skills  w-full h-full flex flex-cols text-lg">
       <Head>
         <title>Skills</title>
         <link rel="icon" href="/favicon.ico" />
@@ -69,7 +70,9 @@ export default function Skills() {
         s
         <div className="skill_level  mt-4 w-full">
           <div className="head flex justify-between mt-2 w-full  ">
-            <p className="text"> Skill level</p>
+            <header className="section_header text-4xl text-grad-one font-medium">
+              <p className="w_i_">Skill level</p>
+            </header>
             <Toggle className="toggle_container flex w-24 justify-between items-center">
               <FaThList
                 className="toggle_icon"
@@ -87,9 +90,26 @@ export default function Skills() {
           </div>
         </div>
         <div className="skills_components  mt-3">{changeView(view)}</div>
-        <div className="w-full h-48 bg-text-glow-full">
-          maybe the footer goes her
-        </div>
+        <section className="w-full  bg-primary border">
+          <header className="section_header text-4xl text-grad-one font-medium">
+            <p className="w_i_">What I can do?</p>
+          </header>
+
+          <section className="mt-4">
+            <h1 className="p_one">
+              I can build Awesome, Ssecure and interacive Web Apps with{' '}
+              <span className="text-xl text-grad-one">ReactJs</span> and{' '}
+              <span className="text-xl text-grad-one">NextJs</span>
+              and Can manage the Backend fctionalty with{' '}
+              <span className="text-xl text-grad-one">NodeJs</span>
+              <br />
+              With the knowledge of algorithm {'&'} data Structure i can
+              Implement Complex features or Logics with
+              <span className="text-xl text-grad-one">JavaScript</span>I use
+              Styled_component and tailwindCss for designing interfaces.
+            </h1>
+          </section>
+        </section>
       </main>
     </div>
   );
