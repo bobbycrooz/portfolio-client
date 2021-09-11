@@ -17,7 +17,7 @@ const Text = styled.h2`
   #373737 */
   letter-spacing: 1px;
   line-height: 1em;
-  /* -webkit-box-reflect: below 1px linear-gradient(transparent, #c0151544); */
+  /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0004); */
 
   -webkit-box-reflect: below 0 linear-gradient(transparent, #0004);
   animation: glows 3s linear infinite;

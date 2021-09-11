@@ -17,20 +17,20 @@ export default function Header() {
         <RotateBG className="menu_bg overflow-hidden rounded-lg h-full">
           <div className="menu_cover overflow-hidden h-full flex items-center justify-between bg-primary rounded-lg">
             <div className="nav-links  text-lg font-joe text-textLow font-bold  p-1 w-full flex items-center justify-around">
-              <Link href="/About">
-                <a>About</a>
+              <Link href="/Projects">
+                <a>Project</a>
               </Link>
 
               <Link href="/Contact">
                 <a>Skills</a>
               </Link>
 
-              <Link href="/Projects">
-                <a>Project</a>
-              </Link>
-
               <Link href="/Skills">
                 <a>Contact</a>
+              </Link>
+
+              <Link href="/About">
+                <a>About</a>
               </Link>
             </div>
 
@@ -70,7 +70,6 @@ const Menu = styled.h1`
 
       a {
         /* border: 1px solid red; */
-        color: #fff;
       }
     }
   }

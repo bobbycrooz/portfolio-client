@@ -1,6 +1,16 @@
 import styled from 'styled-components';
+import React from 'react';
 
-export default function Button({ children, w, h, mt }) {
+interface buttonTypes {
+  children: any;
+  mt?: any;
+  w?: string;
+  h?: string;
+  t?: 'button' | 'submit';
+  click?: React.MouseEventHandler<HTMLButtonElement>;
+}
+
+export default function Button({ children, w, h, mt, t, click }: buttonTypes) {
   return (
     <Btn
       className="outer  relative  bg-gradient-to-r mt-2 from-grad-one to-grad-two "
@@ -8,7 +18,11 @@ export default function Button({ children, w, h, mt }) {
       h={h}
       mt={mt}
     >
-      <button className="bg-primary text-md font-medium leading-4">
+      <button
+        type={t}
+        onClick={click}
+        className="bg-primary text-md font-medium leading-4"
+      >
         {children}
       </button>
       <span className="one w-full border h-full "></span>

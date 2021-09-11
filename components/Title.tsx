@@ -7,7 +7,7 @@ import { useRouter } from 'next/router';
 import { SiAudiomack } from 'react-icons/si';
 
 export default function Title() {
-  const { pathname } = useRouter();
+  const { pathname, push } = useRouter();
   const [audioOn, setAudioOn] = useState(false);
   const [audio] = useState(
     typeof Audio !== 'undefined' && new Audio('./track.mp3')
@@ -23,7 +23,13 @@ export default function Title() {
         <Glow size={false} text={pathname.replace('/', ' ')} />
         {console.log(pathname)}
         {['/Projects', '/Skills'].includes(pathname) ? (
-          <Button mt={false} w="70px" h="30px">
+          <Button
+            t="button"
+            click={() => push('/Admin')}
+            mt={false}
+            w="70px"
+            h="30px"
+          >
             Add
           </Button>
         ) : (

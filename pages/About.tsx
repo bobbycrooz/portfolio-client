@@ -11,6 +11,7 @@ import SkillChart from '../components/Chart';
 import SkillPie from '../components/Pie';
 import SkillBar from '../components/SkillBar';
 import Hashtag from '../components/Hashtag';
+import bob from '../public/bob.png';
 
 export default function About() {
   const [view, setView] = useState('normal');
@@ -23,28 +24,35 @@ export default function About() {
       </Head>
 
       <main className="h-full p-2  w-full">
-        <div className="img_cont w-full h-48 bg-textLow">
-          <p>i code the web</p>
-          {/* <Image src="" /> */}
+        <div className="img_cont  w-full h-48 border-b border-grad-two">
+          <p className="text-textLow font-bold text-3xl  font-joe">
+            Deligent
+            <br />
+            _Disciplined
+            <br />
+            ___Developer
+          </p>
+          {/* <Image src={bob} className="bob w-full h-48 border" /> */}
         </div>
 
         <section className="more_info mt-2">
           <p className="more_text">
-            My nick name is Bobby and i love to use that at my work space, i
-            love to make people love web apps by giving it an outstanding look
-            and feel, also make all interactions and experience great
+            My Nickname is Bobby and I love to use that at my work space, I love
+            to make users feel comfortable with web Apps by giving it an
+            outstanding look and feel with great user interactions and
+            experience.
             <br />
             <br />
-            i'm currently pursuing a degree in Electronics and Computer
+            I'm currently pursuing a degree in Electronics and Computer
             Engineering (4th level of 5) width outstanding perfomace. 👩‍🎓
             <br />
             <br />
-            I'm a foodie 🍕 person, i get more energy from it, and makes me
+            I'm a foodie 🍕 person, I get more energy from it, and it makes me
             spend more time working without getting burnout or stressed out,
             <br />
-            <br />i spend few and idle times watching movies for playing
-            football ⚽ , i love connecting with people and brainstorming on
-            complex tasks.
+            <br />I spend few and idle times watching movies or playing football
+            ⚽, I love connecting with people and brainstorming on complex
+            tasks, and also impaccting knowledge into others.
           </p>
         </section>
       </main>

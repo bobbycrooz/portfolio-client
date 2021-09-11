@@ -94,7 +94,7 @@ export default function Contact() {
             <span className="error absolute "></span>
           </div>
 
-          <Button mt={false} w="120px" h="39px">
+          <Button t="submit" mt={false} w="120px" h="39px">
             Drop
           </Button>
         </form>

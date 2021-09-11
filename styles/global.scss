@@ -32,6 +32,20 @@ code {
   height: 70vh;
 }
 
+.admin {
+  height: calc(100vh - 15rem);
+}
+
+.bob {
+  width: 100%;
+}
+
+.img_cont {
+  background-image: url('../public/bob.png');
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: right;
+}
 .social_media_card div {
   border-radius: 8px;
   background-blend-mode: darken;
