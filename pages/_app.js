@@ -15,10 +15,10 @@ function MyApp({ Component, pageProps }) {
   }, [pathname]);
 
   return (
-    <main className="text-secondary w-full h-full " id="main">
+    <main className="text-secondary w-full h-full" id="main">
       <Header />
       <Title />
-      <div className="app h-full  bg-body p-4 ">
+      <div className="app h-full  bg-body p-4">
         <Component {...pageProps} />
       </div>
       <Footer />

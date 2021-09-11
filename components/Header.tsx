@@ -9,13 +9,15 @@ export default function Header() {
 
   return (
     <div className="navbar bg-primary z-10 sticky top-0 h-20 flex justify-between items-center shadow-md w-full p-2  ">
-      <h1 className=" text-grad-one font-black font-logo text-3xl">Idris</h1>
+      <Link href="/">
+        <a className=" text-grad-one font-black font-logo text-3xl">Idris</a>
+      </Link>
 
       <Menu className={showNav && 'active overflow-hidden'}>
         <RotateBG className="menu_bg overflow-hidden rounded-lg h-full">
           <div className="menu_cover overflow-hidden h-full flex items-center justify-between bg-primary rounded-lg">
             <div className="nav-links  text-lg font-joe text-textLow font-bold  p-1 w-full flex items-center justify-around">
-              <Link href="/">
+              <Link href="/About">
                 <a>About</a>
               </Link>
 

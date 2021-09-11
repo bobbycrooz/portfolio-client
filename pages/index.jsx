@@ -7,7 +7,7 @@ import Glow from '../components/Glow';
 
 export default function Home() {
   return (
-    <div className="welcome w-full  text-xl ">
+    <div className="welcome_home w-full text-xl ">
       <Head>
         <title>welcome</title>
         <link rel="icon" href="/favicon.ico" />
