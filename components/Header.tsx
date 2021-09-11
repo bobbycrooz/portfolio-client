@@ -10,7 +10,9 @@ export default function Header() {
   return (
     <div className="navbar bg-primary z-10 sticky top-0 h-20 flex justify-between items-center shadow-md w-full p-2  ">
       <Link href="/">
-        <a className=" text-grad-one font-black font-logo text-3xl">Idris</a>
+        <a className=" text-grad-one font-black font-logo ml-2 text-3xl">
+          Idris
+        </a>
       </Link>
 
       <Menu className={showNav && 'active overflow-hidden'}>
@@ -21,11 +23,11 @@ export default function Header() {
                 <a>Projects</a>
               </Link>
 
-              <Link href="/Contact">
+              <Link href="/Skills">
                 <a>Skills</a>
               </Link>
 
-              <Link href="/Skills">
+              <Link href="/Contact">
                 <a>Contact</a>
               </Link>
 

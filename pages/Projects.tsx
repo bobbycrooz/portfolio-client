@@ -48,7 +48,7 @@ export default function Project({ data }) {
         <Hashtag selected={false} name="Js" />
         <Hashtag selected={false} name="Git" />
       </div>
-      <div className="grid gap-4 grid-cols-1 mt-6 w-full p">
+      <div className="grid gap-5 grid-cols-1 mt-6 w-full p">
         {Projects.map((item, index) => (
           <Card key={index} item={item} />
         ))}

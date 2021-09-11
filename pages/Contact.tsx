@@ -26,34 +26,34 @@ export default function Contact() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="available w-full ">
+      <div className="available w-full mt-6">
         <h1 className="sub_title">Available for :</h1>
 
         <div className="jobs_container mt-4  flex w-full">
           <div className="status_container flex flex-col justify-between h-32 spacing-y-3">
             <Status className="status active flex items-center  p-1 px-3">
               <span className="dot rounded-full"></span>{' '}
-              <p className="ml-3 ">Remote</p>
+              <p className="ml-3 text-textRead">Remote</p>
             </Status>
 
             <Status className="status active flex items-center  p-1 px-3">
               <span className="dot rounded-full"></span>{' '}
-              <p className="ml-3 ">freelance</p>
+              <p className="ml-3 text-textRead">freelance</p>
             </Status>
 
             <Status className="status  flex items-center  p-1 px-3">
               <span className="dot rounded-full"></span>{' '}
-              <p className="ml-3 ">Fultime</p>
+              <p className="ml-3 text-textLow">Fultime</p>
             </Status>
           </div>
 
           <div className="ml-3  w-full flex items-center justify-center ">
-            <h1 className="job_text font-joe">Jobs</h1>
+            <h1 className="job_text font-logo">Jobs</h1>
           </div>
         </div>
       </div>
 
-      <main className="h-full  w-full contact_form  mt-3">
+      <main className="h-full  w-full contact_form  mt-14">
         <header className="section_header">
           <p className="sub_title">Drop a Message</p>
         </header>
@@ -67,7 +67,7 @@ export default function Contact() {
               type="text"
               name=""
               id=""
-              className="bg-primary  focus:outline-none  placeholder-textLow text-textLow w-full h-full text-xl px-3"
+              className="bg-primary  focus:outline-none placeholder-textRead text-textRead w-full h-full text-xl px-3"
               placeholder="Your Name"
             />
             <span className="error absolute"></span>
@@ -79,14 +79,14 @@ export default function Contact() {
               name=""
               id=""
               placeholder="Email"
-              className="bg-primary   focus:outline-none   placeholder-textLow text-textLow w-full h-full text-xl px-3"
+              className="bg-primary   focus:outline-none placeholder-textRead text-textRead w-full h-full text-xl px-3"
             />
             <span className="error absolute"></span>
           </div>
 
           <div className="field_container border border-grad-two  relative w-full h-24">
             <textarea
-              className="bg-primary   focus:outline-none  placeholder-textLow text-textLow  text-xl px-3 w-full h-full"
+              className="bg-primary   focus:outline-noneplaceholder-textRead text-textRead  text-xl px-3 w-full h-full"
               name=""
               id=""
               placeholder="message for me"
@@ -99,7 +99,7 @@ export default function Contact() {
           </Button>
         </form>
 
-        <section className="social_media  w-full mt-6">
+        <section className="social_media  w-full mt-14">
           <header className="section_header">
             <h1 className="find_me sub_title">Let's Socialize</h1>
           </header>

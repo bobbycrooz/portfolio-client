@@ -37,7 +37,7 @@ export default function Title() {
             <GiSpeaker
               onClick={() => setAudioOn(p => !p)}
               size={30}
-              color={audioOn ? '#f44369' : '#474747'}
+              color={audioOn ? '#f44369' : '#8D8D8D'}
             />
           </>
         )}

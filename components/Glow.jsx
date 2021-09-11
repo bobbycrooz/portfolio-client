@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export default function Glow({ text, size }) {
   return (
-    <Text className="fontSize" s={size}>
+    <Text className="font" s={size}>
       {text}
     </Text>
   );
@@ -19,7 +19,7 @@ const Text = styled.h2`
   line-height: 1em;
 
   -webkit-box-reflect: below 0 linear-gradient(transparent, #0002);
-  animation: glows 3s linear infinite;
+  animation: glows 5s linear infinite;
 
   @keyframes glows {
     0%,
