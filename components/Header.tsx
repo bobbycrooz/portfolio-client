@@ -36,7 +36,7 @@ export default function Header() {
               </Link>
             </div>
 
-            <div className="menu_icon visible  absolute right-0">
+            <div className="menu_icon visible  absolute right-1">
               <Hamburger
                 color="#C3C3C3"
                 direction="right"

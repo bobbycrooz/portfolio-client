@@ -1,11 +1,12 @@
 import Head from 'next/head';
 import Link from 'next/link';
-
+import { useRouter } from 'next/router';
 import { HiDocumentDownload } from 'react-icons/hi';
 import Button from '../components/Button';
 import Glow from '../components/Glow';
 
 export default function Home() {
+  const { push } = useRouter();
   return (
     <div className="welcome_home w-full text-xl ">
       <Head>
@@ -33,7 +34,12 @@ export default function Home() {
         <div className="cto_cont  mt-4">
           <div className="cto  p-2 flex items-center">
             <Link href="/about">
-              <Button className="button_one" w="100.5px" h="40px">
+              <Button
+                click={() => push('/Contact')}
+                className="button_one"
+                w="100.5px"
+                h="40px"
+              >
                 Hire
               </Button>
             </Link>
