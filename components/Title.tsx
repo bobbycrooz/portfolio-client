@@ -18,7 +18,7 @@ export default function Title() {
   }, [audioOn]);
 
   return (
-    <Pane className="pane_title z-10 sticky bg-gradient-to-r from-grad-one to-grad-two h-20 w-full p-0">
+    <Pane className="pane_title z-10 sticky bg-gradient-to-r from-grad-one to-grad-two h-20 w-full">
       <div className="inner w-full  flex h-full bg-primary items-center justify-between  p-3">
         <Glow size={false} text={pathname.replace('/', ' ')} />
         {console.log(pathname)}
@@ -47,6 +47,7 @@ export default function Title() {
 }
 
 const Pane = styled.div`
+  padding-top: 0.58px;
   div.inner {
     clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
   }

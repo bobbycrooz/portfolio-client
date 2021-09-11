@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <main className="text-secondary w-full h-full" id="main">
-      <Head key="ele">
+      <Head>
         <meta name="theme-color" content="#040404" />
       </Head>
 

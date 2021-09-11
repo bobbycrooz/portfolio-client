@@ -35,10 +35,11 @@ export default function About() {
 
         <section className="more_info mt-2">
           <p className="more_text readable">
-            My Nickname is Bobby and I love to use that at my work space, I love
-            to make users feel comfortable with web Apps by giving it an
-            outstanding look and feel with great user interactions and
-            experience.
+            I prefer to be called by my Nick, BobbyDev({' '}
+            <span className="font-logo text-grad-one">bd</span> ) and I love to
+            use that at my work space, I care more about users comfortability
+            with web Apps by giving it an outstanding look and feel by
+            implementing great user interactions and experience.
             <br />
             <br />
             I'm currently pursuing a degree in Electronics and Computer

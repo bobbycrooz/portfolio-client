@@ -10,9 +10,7 @@ export default function Header() {
   return (
     <div className="navbar bg-primary z-10 sticky top-0 h-20 flex justify-between items-center shadow-md w-full p-2  ">
       <Link href="/">
-        <a className=" text-grad-one font-black font-logo ml-2 text-3xl">
-          Idris
-        </a>
+        <a className=" text-grad-one font-black font-logo ml-2 text-3xl">bd</a>
       </Link>
 
       <Menu className={showNav && 'active overflow-hidden'}>
