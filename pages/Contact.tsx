@@ -27,7 +27,7 @@ export default function Contact() {
       </Head>
 
       <div className="available w-full ">
-        <h1 className="text-2xl">I'm currently available for :</h1>
+        <h1 className="sub_title">Available for :</h1>
 
         <div className="jobs_container mt-4  flex w-full">
           <div className="status_container flex flex-col justify-between h-32 spacing-y-3">
@@ -54,8 +54,8 @@ export default function Contact() {
       </div>
 
       <main className="h-full  w-full contact_form  mt-3">
-        <header className="section_header text-4xl text-grad-one font-medium">
-          <p className="w_i_">Drop a Message</p>
+        <header className="section_header">
+          <p className="sub_title">Drop a Message</p>
         </header>
 
         <form
@@ -100,8 +100,8 @@ export default function Contact() {
         </form>
 
         <section className="social_media  w-full mt-6">
-          <header className="section_header text-4xl text-grad-one font-medium">
-            <h1 className="find_me">Let's Socialize</h1>
+          <header className="section_header">
+            <h1 className="find_me sub_title">Let's Socialize</h1>
           </header>
 
           <div className="social_media_card_container grid gap-2 grid-cols-2 mt-3">

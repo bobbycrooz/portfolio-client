@@ -55,23 +55,17 @@ export default function Skills() {
   }
 
   return (
-    <div className="skills  w-full h-full flex flex-cols text-lg">
+    <div className="skills  w-full h-full flex flex-cols text-lg p-1">
       <Head>
         <title>Skills</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className="h-full  w-full  ">
-        <h1 className="about_skill text-xl">
-          I adopt new technology very fast as long as it's got Documentations,
-          <br />
-          I'm very good at implementing while learning.
-        </h1>
-        s
         <div className="skill_level  mt-4 w-full">
           <div className="head flex justify-between mt-2 w-full  ">
             <header className="section_header text-4xl text-grad-one font-medium">
-              <p className="w_i_">Skill level</p>
+              <p className="sub_title"></p>
             </header>
             <Toggle className="toggle_container flex w-24 justify-between items-center">
               <FaThList
@@ -90,13 +84,13 @@ export default function Skills() {
           </div>
         </div>
         <div className="skills_components  mt-3">{changeView(view)}</div>
-        <section className="w-full  bg-primary border">
-          <header className="section_header text-4xl text-grad-one font-medium">
-            <p className="w_i_">What I can do?</p>
+        <section className="w-full  mt-7">
+          <header className="section_header text-4xl text-grad-one font-medium ">
+            <p className="sub_title">What I can do?</p>
           </header>
 
-          <section className="mt-4">
-            <h1 className="p_one">
+          <section className="mt-2">
+            <h1 className="p_one readable">
               I can build Awesome, Ssecure and interacive Web Apps with{' '}
               <span className="text-xl text-grad-one">ReactJs</span> and{' '}
               <span className="text-xl text-grad-one">NextJs</span>

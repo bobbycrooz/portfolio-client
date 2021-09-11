@@ -13,29 +13,28 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className=" mt-4">
-        <p className="hi font-medium text-2xl">hi 👋,</p>
+      <div className=" mt-8">
+        <p className="readable-def">Hi 👋,</p>
         <div className="intro flex items-center  mt-2  space-x-4">
-          <h1 className="name text-5xl font-extrabold">I'm</h1>{' '}
-          <Glow text="Idris" size="58px" />,
+          <h1 className="name text-5xl font-bold">I'm</h1>{' '}
+          <Glow text="Idris" size="60px" />,
         </div>
-        <p className="info text-2xl text-textRead  w-full mt-5 font-joe">
-          A <u>FullStack</u> JavaScript Web Developer (Frontend-Heavy),
-          <br />
-          I implement great responsive
-          <br />
-          and interactive Web Apps,
-        </p>
-        <p className="more text-textRead "> more about me here</p>
-        <p className="stack text-lg mt-3 text-textLow">
+        <div className="mt-4 text-left w-full">
+          <p className="info readable-def">
+            A FullStack JavaScript Web Developer (Frontend-Heavy), I implement
+            great responsive and interactive Web Apps,
+          </p>
+        </div>
+
+        <p className="stack text-xl mt-3 text-textLow">
           ReactJs | NextJs | NodeJs
         </p>
 
         <div className="cto_cont  mt-4">
           <div className="cto  p-2 flex items-center">
             <Link href="/about">
-              <Button className="button_one" w="140.5px" h="44px">
-                Explore
+              <Button className="button_one" w="100.5px" h="40px">
+                Hire
               </Button>
             </Link>
 

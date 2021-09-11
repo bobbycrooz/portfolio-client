@@ -5,7 +5,8 @@ module.exports = {
   theme: {
     fontFamily: {
       joe: ['Josefin Sans', 'sans-serif'],
-      logo: ['Pacifico', 'cursive']
+      logo: ['Pacifico', 'cursive'],
+      robo: ['Roboto', 'sans-serif']
     },
     extend: {
       spacing: {
@@ -17,7 +18,7 @@ module.exports = {
         primary: '#040404',
         secondary: '#C3C3C3',
         textLow: '#474747',
-        textRead: '#676767',
+        textRead: '#8D8D8D',
         glow: {
           full: 'hsla(186, 100%, 69%, 1)',
           low: 'hsla(217, 100%, 50%, 1) '

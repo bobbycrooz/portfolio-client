@@ -25,32 +25,34 @@ export default function Card({ item }) {
         />
         <div className="info bg-body  w-full text-lg p-2 rounded-b-md">
           <div className="name_container flex justify-between rounded-md">
-            <h2 className="project_name text-2xl mt-3  font-bold">Ajoo CMS</h2>
+            <h2 className="project_name text-secondary text-2xl font-bold mt-2">
+              Ajoo CMS
+            </h2>
             <button className="star  w-auto px-1 flex justify-center items-center    ">
               <AiFillLike className="text-grad-two" />
-              <span className="count ml-1 text-textLow">23</span>
+              <span className="count ml-1 readabl">23</span>
             </button>
           </div>
 
           <div className="project_description mt-1 ">
-            <p className="text-left text-xl font-normal">
+            <p className="text-left readable">
               this website contains a fed isolated contentand helping ohers do
               thires.
             </p>
           </div>
 
           <div className="tech_stack mt-2 flex justify-between text-md text-textLow">
-            <p className="stack  ">ReactJs | NextJs</p>
+            <p className="stack">ReactJs | NextJs</p>
 
             <p className="track mr-2">
               <i>~FrontEnd</i>
             </p>
           </div>
 
-          <div className="action_container flex justify-center space-x-8 mt-3">
-            <FaGlobe className="action_icon text-lg" />
+          <div className="action_container flex  justify-center space-x-8 mt-3">
+            <FaGlobe className="action_icon text-lg text-secondary" />
 
-            <AiFillGithub className="action_icon  text-lg" />
+            <AiFillGithub className="action_icon  text-lg text-secondary" />
           </div>
         </div>
       </div>
@@ -109,12 +111,12 @@ const Main = styled.div`
       transition: all 0.2s linear;
 
       .action_icon {
-        color: #373737;
+        color: #8d8d8d;
         transition: all 0.2s linear;
         font-size: 25px;
         &:hover {
           transform: scale(1.3);
-          color: #fff;
+          color: #f44369;
           /* transition: all 0.2s linear; */
         }
       }

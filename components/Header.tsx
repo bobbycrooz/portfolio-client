@@ -5,7 +5,7 @@ import { RotateBG } from './commons';
 import Link from 'next/link';
 
 export default function Header() {
-  const [showNav, setShowNav] = useState(true);
+  const [showNav, setShowNav] = useState(false);
 
   return (
     <div className="navbar bg-primary z-10 sticky top-0 h-20 flex justify-between items-center shadow-md w-full p-2  ">
@@ -16,9 +16,9 @@ export default function Header() {
       <Menu className={showNav && 'active overflow-hidden'}>
         <RotateBG className="menu_bg overflow-hidden rounded-lg h-full">
           <div className="menu_cover overflow-hidden h-full flex items-center justify-between bg-primary rounded-lg">
-            <div className="nav-links  text-lg font-joe text-textLow font-bold  p-1 w-full flex items-center justify-around">
+            <div className="nav-links  text-lg font-joe font-medium  p-1 w-full flex items-center justify-around">
               <Link href="/Projects">
-                <a>Project</a>
+                <a>Projects</a>
               </Link>
 
               <Link href="/Contact">
@@ -69,7 +69,9 @@ const Menu = styled.h1`
       /* border: 1px solid red; */
 
       a {
-        /* border: 1px solid red; */
+        &:hover {
+          color: #f44369;
+        }
       }
     }
   }
@@ -83,6 +85,9 @@ const Menu = styled.h1`
     opacity: 0.2;
     width: calc(100% - 38px);
     /* visibility: hidden; */
+    a {
+      color: #c3c3c3;
+    }
   }
 
   /* * {

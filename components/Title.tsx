@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Button from './Button';
 import Glow from './Glow';
 import { useRouter } from 'next/router';
-import { SiAudiomack } from 'react-icons/si';
+import { GiSpeaker } from 'react-icons/gi';
 
 export default function Title() {
   const { pathname, push } = useRouter();
@@ -19,7 +19,7 @@ export default function Title() {
 
   return (
     <Pane className="pane_title z-10 sticky bg-gradient-to-r from-grad-one to-grad-two h-20 w-full p-0">
-      <div className="inner w-full  flex h-full bg-primary items-center justify-between  p-4">
+      <div className="inner w-full  flex h-full bg-primary items-center justify-between  p-3">
         <Glow size={false} text={pathname.replace('/', ' ')} />
         {console.log(pathname)}
         {['/Projects', '/Skills'].includes(pathname) ? (
@@ -34,7 +34,7 @@ export default function Title() {
           </Button>
         ) : (
           <>
-            <SiAudiomack
+            <GiSpeaker
               onClick={() => setAudioOn(p => !p)}
               size={30}
               color={audioOn ? '#f44369' : '#474747'}

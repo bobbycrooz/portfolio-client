@@ -26,17 +26,15 @@ export default function About() {
       <main className="h-full p-2  w-full">
         <div className="img_cont  w-full h-48 border-b border-grad-two">
           <p className="text-textLow font-bold text-3xl  font-joe">
-            Deligent
+            Disciplined
             <br />
-            _Disciplined
-            <br />
-            ___Developer
+            Developer
           </p>
           {/* <Image src={bob} className="bob w-full h-48 border" /> */}
         </div>
 
         <section className="more_info mt-2">
-          <p className="more_text">
+          <p className="more_text readable">
             My Nickname is Bobby and I love to use that at my work space, I love
             to make users feel comfortable with web Apps by giving it an
             outstanding look and feel with great user interactions and

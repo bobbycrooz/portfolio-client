@@ -13,10 +13,10 @@ const SkillBar = ({ skills }) => {
             <div className="tol_name flex justify-between items-center">
               {/* <SiJavascript className="text-2xl" /> */}
               {item.icon}
-              <h1 className="name ml-4">{item.name}</h1>
+              <h1 className="name ml-4 readable">{item.name}</h1>
             </div>
 
-            <h1 className="percentage">{item.progress}</h1>
+            <h1 className="percentage"></h1>
           </div>
           {/* <hr className="border-grad-one float-center mt-2   w-20" /> */}
           <Bar
