@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Spin as Hamburger } from 'hamburger-react';
 import styled from 'styled-components';
 import { RotateBG } from './commons';
@@ -6,6 +6,14 @@ import Link from 'next/link';
 
 export default function Header() {
   const [showNav, setShowNav] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (showNav) {
+        setShowNav(false);
+      }
+    }, 10000);
+  }, [showNav]);
 
   return (
     <div className="navbar bg-primary z-10 sticky top-0 h-20 flex justify-between items-center shadow-md w-full p-2  ">
